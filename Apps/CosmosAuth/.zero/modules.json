@@ -1,0 +1,8 @@
+[
+  {
+    "name": "CosmosAuth",
+    "runtime": "node",
+    "entrypoint": "index.js",
+    "addedAt": "2026-07-21T22:51:01.678Z"
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "name": "@ship/cores",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "zero": "./Paths/Bin/Zero.js"
+  },
+  "exports": {
+    ".": {
+      "import": "./Paths/index.js",
+      "types": "./Paths/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc && rm -rf Paths/Vendor && cp -R Subworks/Vendor Paths/Vendor && chmod +x Paths/Bin/Zero.js",
+    "typecheck": "tsc --noEmit",
+    "dev": "tsx Subworks/index.ts",
+    "clean": "rm -rf Paths"
+  },
+  "dependencies": {
+    "@ship/datasets": "workspace:*",
+    "@ship/agent": "workspace:*",
+    "@ship/scaffold": "workspace:*",
+    "@ship/security": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.4.5"
+  }
+}

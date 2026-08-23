@@ -1,0 +1,23 @@
+{
+  "name": "@ship/agent",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./Paths/index.js",
+      "types": "./Paths/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc && rm -rf Paths/Vendor && cp -R Subworks/Vendor Paths/Vendor",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf Paths"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.4.5"
+  }
+}

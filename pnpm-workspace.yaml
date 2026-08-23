@@ -1,0 +1,7 @@
+packages:
+  - "Works/*"
+  - "Works/Cores/*"
+  - "Apps/*"
+  - "Apps/*/ui"
+allowBuilds:
+  esbuild: true

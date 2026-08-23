@@ -1,0 +1,30 @@
+// Cores Guidelines
+// designed and built by onyxlabs.
+
+export const guidelinesLines: string[] = [
+  "Cores — kernel, foundation, and process manager for Ship",
+  "",
+  "  ship new <name>              scaffold a new app in Ship/Apps/<name> (--path to override)",
+  "  ship latest                  cd back into whichever App you used most recently, from anywhere",
+  "  ship build [on <port>] [app] run the app — picks interactively if not run from inside one",
+  "  ship hotswap [app]           auto-detect changes + hot swap, no path needed",
+  "  ship daemon install [app]    run it as a background service instead — survives terminal close",
+  "  ship export from <app-or-port>  package a running app for handoff to Pipelines (deploy)",
+  "  ship agent list [path]       show detected + registered modules",
+  "  ship agent add [path]        search for unregistered modules first, or add manually",
+  "  ship agent edit [path]       pick a module interactively — rename, re-point, or remove it",
+  "",
+  "A module's name is the first line of its entry file (a plain comment,",
+  "same convention as Ship's own file stamp). Auto-detected modules are",
+  "suggested on every build/export/new — approve one to name and register it.",
+  "",
+  "An App can hold more than one module (e.g. a Frontend and a Backend) —",
+  "each is tracked and named independently.",
+  "",
+  "One-time setup: `ship new` and `ship latest` both auto-cd (a subprocess",
+  "can't change your shell's directory on its own) — Dynamic Boot already",
+  "adds this for you, but if you ever need it by hand, add to your",
+  "~/.zshrc (or ~/.bashrc):",
+  "",
+  '  eval "$(ship shell-init)"',
+];

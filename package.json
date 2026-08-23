@@ -1,0 +1,11 @@
+{
+  "name": "@ship/root",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "pnpm -r run build",
+    "typecheck": "pnpm -r run typecheck",
+    "clean": "pnpm -r run clean"
+  }
+}

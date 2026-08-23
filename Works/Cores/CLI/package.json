@@ -1,0 +1,28 @@
+{
+  "name": "@ship/cli",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "ship": "./Paths/Bin/Ship.js"
+  },
+  "scripts": {
+    "build": "tsc && chmod +x Paths/Bin/Ship.js",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf Paths"
+  },
+  "dependencies": {
+    "@ship/cores": "workspace:*",
+    "@ship/datasets": "workspace:*",
+    "@ship/connectors": "workspace:*",
+    "@ship/pipelines": "workspace:*",
+    "@ship/agent": "workspace:*",
+    "@ship/security": "workspace:*",
+    "@ship/scaffold": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.4.5"
+  }
+}

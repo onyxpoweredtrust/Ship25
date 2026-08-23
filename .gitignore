@@ -1,0 +1,21 @@
+# Real installed dependencies only — NOT Subworks/Vendor/**/node_modules,
+# which is vendored source that must be committed (unanchored "node_modules/"
+# would match those too and silently drop the vendored trees from git).
+/node_modules/
+Works/*/node_modules/
+Works/Cores/*/node_modules/
+Paths/
+.DS_Store
+*.log
+
+# Ship Shield's anti-scraping implementation stays out of the repo entirely —
+# shipping the source would hand competitors the exact detection/tarpit logic
+# it's meant to defeat. Kept local-only, enforced at the source level. Forked
+# into Works/Cores/Security too — same reasoning, both copies local-only.
+Works/Connectors/Subworks/Providers/ShipShield/
+Works/Cores/Security/Subworks/ShipShield/
+
+# Only these docs are meant to be public — checklists/runbooks are working notes.
+*.md
+!/GETTING_STARTED.md
+!/README.md

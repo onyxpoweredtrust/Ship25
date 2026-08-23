@@ -1,0 +1,8 @@
+Legal
+designed and written by onyxlabs
+
+permission is granted to any person obtaining a copy of this software and its associated files, to use, copy, modify, merge, publish, distribute, sublicense, sell, and otherwise deal in the software for any purpose, with or without conditions, and without restriction, including without limitation the rights described above.
+
+this software is provided as is, without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement. in no event shall onyxlabs, or any contributor, be liable for any claim, damages, or other liability, whether in an action of contract, tort, or otherwise, arising from, out of, or in connection with the software, or the use or other dealings in the software.
+
+no attribution is required to use this software, though it is appreciated.

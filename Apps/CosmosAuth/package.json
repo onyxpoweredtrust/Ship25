@@ -1,0 +1,10 @@
+{
+  "name": "cosmos-auth",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@ship/datasets": "workspace:*",
+    "@ship/connectors": "workspace:*"
+  }
+}

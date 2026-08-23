@@ -1,0 +1,4 @@
+node_modules
+.data
+.mesh-blobs
+.mesh-gc-state.json
