@@ -1,6 +1,6 @@
-# ship25
+# Ship25
 
-ship25 is a self-hosted developer platform for building, running, and operating applications from your own machines.
+Ship25 is a self-hosted developer platform for building, running, and operating applications from your own machines.
 
 the repository contains the minimal built platform: a single `ship` command with tools for scaffolding, builds, processes, configuration, storage, security, connectors, and deployment.
 
